@@ -1,0 +1,13 @@
+streamlit~=1.41.1
+langchain-community~=0.3.12
+langchain-core~=0.3.25
+python-dotenv~=1.0.1
+pandas~=2.2.3
+chromadb~=0.5.23
+jupyter~=1.1.1
+pip~=24.3.1
+attrs~=24.2.0
+distro~=1.9.0
+protobuf~=5.29.1
+pillow~=11.0.0
+filelock~=3.16.1
