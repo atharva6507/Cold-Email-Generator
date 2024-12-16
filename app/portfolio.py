@@ -18,7 +18,7 @@ class Portfolio:
         if not self.collection.count():
             for _,row in self.data.iterrows():
                 self.collection.add(documents=row["Techstack"],
-                                    metadata={"links":row["Links"]},
+                                    metadatas={"links":row["Links"]},
                                     ids=[str(uuid.uuid4())])
 
     def query_links(self,skills):
