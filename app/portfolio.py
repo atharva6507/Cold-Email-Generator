@@ -1,5 +1,10 @@
 import pandas as pd
-import chromadb
+try:
+    import sqlite3
+    print(sqlite3.version)
+    import chromadb
+except Exception as e:
+    raise ValueError(f"sqlite: {sqlite3.version} \n {e}")
 import uuid
 
 class Portfolio:
