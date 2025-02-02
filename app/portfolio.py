@@ -1,14 +1,9 @@
 import pandas as pd
-try:
-    import sqlite3
-    print(sqlite3.version)
-    import chromadb
-except Exception as e:
-    raise ValueError(f"sqlite: {sqlite3.version} \n {e}")
+import chromadb
 import uuid
 
 class Portfolio:
-    def __init__(self,file_path = "app/resource/my_portfolio.csv"):
+    def __init__(self,file_path = "resource/my_portfolio.csv"):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
         self.chroma_client = chromadb.PersistentClient("vectorstore")
